@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>It's Review identification system</h1>
+        <form action="{{url_for('stem')}}" method="post">
+            Review : <input type="text" name= "review" placeholder="Enter review to check it's good or bad" required="required"><br>
+            <button type="submit">submit</button><br>
+
+        </form>
+    </div>
+    <br>
+    <br>
+
+    {{review_check}}
+</body>
+</html>
